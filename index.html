@@ -509,22 +509,11 @@ src="https://www.facebook.com/tr?id=868158062689353&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<!-- Ringba / RedTrack Code -->
-<script>
-(window._rgba_tags = (window._rgba_tags || [])).push({ type: "User", track_attempted: "yes" });
-  var intervalId = setInterval(() => {
-  if (window.rtkClickID != undefined) {
-    (window._rgba_tags = (window._rgba_tags || [])).push({ type: "User", clickid: window.rtkClickID });
-    console.log("Just ran the rtkClickID script to add Ringba tags: ", window.rtkClickID);
-    clearInterval(intervalId);
-    } else {
-    console.log("rtkcid not defined yet");
-    }
-}, 500);
-</script>
+
 
 </head>
 <body style="visibility: visible;">
+    
     <!-- State Approved Container -->
     <div class="state-approved-container">
         <h2 class="state-approved-text">STATE APPROVED</h2>
@@ -811,5 +800,18 @@ src="https://www.facebook.com/tr?id=868158062689353&ev=PageView&noscript=1"
     });
 </script>
 
+<!-- Ringba / RedTrack Code -->
+<script>
+(window._rgba_tags = (window._rgba_tags || [])).push({ type: "User", track_attempted: "yes" });
+  var intervalId = setInterval(() => {
+  if (window.rtkClickID != undefined) {
+    (window._rgba_tags = (window._rgba_tags || [])).push({ type: "User", clickid: window.rtkClickID });
+    console.log("Just ran the rtkClickID script to add Ringba tags: ", window.rtkClickID);
+    clearInterval(intervalId);
+    } else {
+    console.log("rtkcid not defined yet");
+    }
+}, 500);
+</script>
 
 </body></html>
